@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <style>
+  .nav-link 
+  
+  {
+  	color:white;
+  }
+  
+  .dropdown:hover>.dropdown-menu{
+  	display: block;
+  }
+  
+  .dropdown-item:hover>.dropdown-menu.dropdown-submenu{
+  	display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active{
+  	/*Without this, clicking will make it sticky*/
+  	pointer-events: none;
+  }
+  
+  .dropdown-item>.dropdown-toggle:active{
+  	position-events: none
+  }
+  
+  .dropdown-menu li{
+  	position:relative;
+  }
+  
+  .dropdown-menu .dropdown-submenu{
+  	display: none;
+  	position: absolute;
+  	left:100%;
+  	top:-7px;
+  }
+  
+  .dropdown-menu .dropdown-submenu-left{
+  	right:100%;
+  	left:auto;
+  }
+  
+  .dropdown-menu> li:hover>.dropdown-submenu{
+  	display:block;
+  }
+  	
+  .navbar-brand
+  {
+  	color:white;
+  	  }
+  	  
+  body{
+  	background:url(Photos/img34.jpg);
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment:fixed;
+  	  }
+  
+  a{
+  	text-decoration: none;
+  }
+  
+  
+  .navbar ul li{
+  color: white;
+  padding-right:15px;
+  padding-left:15px;
+  }
+  .dropdown-menu{
+	  color: white;
+	  background-color: transparent;
+  }
+  
+  </style>
+  </head>
+  <body>
+  
+	  
+	  <div class="header">
+
+                <video autoplay loop class="back-video" muted plays-inline>
+                    <source src="media/video.mp4" type="video/mp4">
+                </video>
+
+                <nav>
+                    <div class="Logo mt-3 p-2 rounded-circle border border-light border-5" 
+                    style="background-color: white;text-align: center; 
+                    box-shadow: 4px 5px 8px rgb(255, 0, 0), -4px -5px 8px rgb(0, 255, 0);"><img src="Photos/logo.png" ></div>
+                    <ul class="nav-links">
+                        <li><a id="L" href="index.html"> Home </a></li>
+                        <li class="nav-item dropdown">
+					          <span class="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+					            <a id="L" href="#"> Services </a>
+					          </span>
+					          <ul class="dropdown-menu">
+					            <li><a class="dropdown-item" href="Schedule.html">Schedule</a></li>
+					            <li><a class="dropdown-item" href="#">Contact Teacher's  &raquo;</a>
+					            
+					            <ul class="dropdown-menu dropdown-submenu">
+					            	<li><a class="dropdown-item" href="#">Maths</a></li>
+					            	<li><a class="dropdown-item" href="#">Science</a></li>
+					            	<li><a class="dropdown-item" href="#">English</a></li>
+					            </ul>
+					           </li>
+					            <li><a class="dropdown-item" href="OurTeacher.jsp">Our Teacher's</a></li>
+					          </ul>
+					        </li>
+                        
+			            <li class=" dropdown"><span class="dropdown" data-bs-toggle="dropdown" aria-expanded="false"><a id="L" href="#">Apply </a></span>
+			          		<ul class="dropdown-menu">
+			            	<li><a class="dropdown-item" href="AdmissionForm.jsp">Admission 2024-2025</a> </li>
+			              <li><a class="dropdown-item" href="https://scholarships.gov.in/">Scholarship</a> </li>
+			              </ul>
+			            </li>
+			            <li class=" dropdown"><a id="L" href="#">Gallery </a>
+			            	<ul class="dropdown-menu" style="background-color: transparent;border: none;">
+								<li><a class="dropdown-item" href="Gallery.html">Photos</a></li>
+								<li><a class="dropdown-item" href="Videos.html">Learn Spoken</a></li>
+								</ul>
+						</li>
+			            <li><a id="L" href="About.html">About </a></li>
+			            
+		                        <li class="btn"><a class="dropstart fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								    Login
+								  </a>
+									<ul class="dropdown-menu" style="background-color: transparent;border: none;">
+								    <li><a class="dropdown-item" href="student.html">Student</a></li>
+								    <li><a class="dropdown-item" href="Teacher.html">Teacher</a></li>
+								    <li><a class="dropdown-item" href="AdminLogin.jsp">Admin</a></li>
+								  </ul>
+								</li>
+		                    </ul>
+		                </nav>
+
+                <div class="content">
+                    <h1> The General English School, Sora </h1>
+                    <form>
+                        <input type="text" placeholder="&#x270e; Enter Keyword">
+                        <button type="submit" class="fw-bold">Find Class</button>
+                    </form>
+
+                    <div class="category-list">
+                        <div class="category">
+                            <img src="">
+                            <p class="btn rounded-5"><a href="#more">See more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="more" style="height: .5px;"></div>
+            
+	<div class="row my-2 mx-5" >
+		<div class="col-lg-2 bg-warning rounded-5  fw-bold text-center pt-1">
+			Latest Notificaion:-
+		</div>
+		<div class="col-lg-10 bg-light rounded-5 pt-1 fw-bold">
+			<marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+			<a href="AdmissionForm.jsp">Admission  Now</a></marquee>
+		</div>
+	</div>
+  <div class="mx-5 shadow" >
+	<div class="container-fluid">
+		
+		
+	<div class="row">
+	<div class="col">
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img class="rounded-3 w-100" style="height: 50%;" src="Photos/slide2.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img class="rounded-3 w-100" style="height: 50%;" src="Photos/slide3.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img class="rounded-3 w-100" style="height: 50%;" src="Photos/slide4.jpg" class="d-block w-100" alt="...">
+	    </div>
+	  </div>
+	</div>
+	</div>
+	</div>
+	<br>
+	
+	<div class="container_fluid">
+	<marquee class="bg-danger text-white">The General English School, Sora Kakching District, Manipur - 795103 // Sora Mamang Leikai, Near Nongsha Bazar,  ESTD. 1995 // Support Contact us    7005319500     /    7005094112. The General English School, Sora Kakching District, Manipur - 795103 // Sora Mamang Leikai, Near Nongsha Bazar,  ESTD. 1995 // Support Contact us    7005319500     /    7005094112.The General English School, Sora Kakching District, Manipur - 795103 // Sora Mamang Leikai, Near Nongsha Bazar,  ESTD. 1995 // Support Contact us    7005319500     /    7005094112.The General English School, Sora Kakching District, Manipur - 795103 // Sora Mamang Leikai, Near Nongsha Bazar,  ESTD. 1995 // Support Contact us    7005319500     /    7005094112.The General English School, Sora Kakching District, Manipur - 795103 // Sora Mamang Leikai, Near Nongsha Bazar,  ESTD. 1995 // Support Contact us    7005319500     /    7005094112.The General English School, Sora Kakching District, Manipur - 795103 // Sora Mamang Leikai, Near Nongsha Bazar,  ESTD. 1995 // Support Contact us    7005319500     /    7005094112.The General English School, Sora Kakching District, Manipur - 795103 // Sora Mamang Leikai, Near Nongsha Bazar,  ESTD. 1995 // Support Contact us    7005319500     /    7005094112.The General English School, Sora Kakching District, Manipur - 795103 // Sora Mamang Leikai, Near Nongsha Bazar,  ESTD. 1995 // Support Contact us    7005319500     /    7005094112.</marquee>
+	
+				<!-- message -->
+				<div class="row text-center mx-2 py-3 fw-bold">
+					<div class="col-2"></div>
+					<div class="col-8">
+						<p style="background-color: rgb(0, 0, 160); color: white; height:50px; padding-top: 10px; border-radius: 10px; font-size: 20px;">
+							Message</p>
+					</div>
+					<div class="col-2"></div>
+				</div>
+				
+				<div class="container mb-5">
+					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+						
+						<div class="col-lg-4">
+							<div class="card h-100" style="background-color: transparent;text-align: center; box-shadow: 5px 6px 8px rgb(255, 0, 128), -6px -4px 4px rgb(0, 0, 255);">
+								<div class="card-body">
+									<h5 class="bg-primary text-light rounded-3 mb-3">Notice Board</h5>
+									
+									<marquee direction="up" style="height: 95%;" onmouseover="this.stop();" onmouseout="this.start();" >
+									<p class="text-center fw-bold">Notice <br> Date: 04/12/2023</p>
+
+										<p class="text-align">
+											All the students and teaching and non-teaching staff are notified that
+										our school will be closed for the winter vacation from December 5th to
+										December 25th. All the classes will be suspended during this period.
+										As usual, the school will reopen on December 26th. We remind all the
+										students about the homework and assignments instructed before and afterthe holiday.
+										The examination will happen as scheduled before the winter vacation. We wish all the students to enjoy this holiday safely.</p>
+										<p class="text-center fw-bold">Wish you a happy winter Vacation</p>
+										
+									</marquee>
+								</div>
+							</div>
+						</div>
+						
+			<div class="col-lg-8">
+				<div class="row mb-4">
+					
+						<div class="col-lg-4">
+							<img class="rounded-4" class="card h-100" style="background-color: transparent;text-align: center; box-shadow: 4px 5px 8px rgb(0, 255, 255), -6px -4px 4px rgb(255, 0, 255);" src="Photos/founder-1.jpg" height="100%" width="100%">
+						</div>
+						<div class="col-lg-8">
+							<h3 style=" color: blue; font-weight: bold;">Founder</h3>
+							<p>"I hope that through the practice of, and common interest in, martial arts, we will
+								develop physically and mentally so that we can achieve a better understanding not only
+								of ourselves, but also of others, regardless of race, color or creed. Ultimately we
+								should feel ourselves enabled to make a better contribution to our families and to the
+								society in which we live.
+								"</p>
+						</div>
+				</div>
+				
+						<div class="row">
+						<div class="col-lg-4">
+							<img class="rounded-4" class="card h-100" style="background-color: transparent;text-align: center; box-shadow: 4px 5px 8px rgb(255, 0, 0), -6px -4px 4px rgb(0, 255, 0);" src="Photos/principal-1.jpg" height="100%" width="100%">
+						</div>
+						<div class="col-lg-8">
+							<h3 style=" color: darkblue; font-weight: bold;">Principal</h3>
+							<p>"Being able to work with high-quality instructional materials is so important as
+								pre-service teachers because it prepares us for the actual job! As part of my teacher
+								training, I have written 95 page unit plan, but I have yet to meet a teacher who has
+								done so during their time in the classroom. Receving training in working with and
+								understanding quality curriculum is so much more valueable."</p>
+						</div>
+						</div>
+			</div>
+			</div>
+			</div>
+
+				
+
+				<!-- facilities -->
+				<div class="row mx-2 my-3 fw-bold text-center mb-2" style="font-size: 30px;">
+					<p style="background-color: rgb(64, 0, 64); color: rgb(255, 255, 255); height:50px;  border-radius: 10px;">
+						Facilities</p>
+				</div>
+
+				<div class="container my-5">
+					<div class="row" style="justify-content: space-between;">
+						<div class="card" style="width: 18rem; background: transparent; border: none;">
+							<img class="rounded-4" class="card h-100" style="background-color: transparent;text-align: center; box-shadow: 4px 5px 8px rgb(255, 0, 0), -6px -4px 4px rgb(0, 255, 0);" src="Photos/School van.jpg" class="card-img-top" alt="..." height="100%" width="100%">
+							<div class="card-body text-center">
+								<h5 class="card-title fw-bold">Transport Facility</h5>
+								<a href="transport.html" class="btn btn-primary">Click Here</a>
+							</div>
+						</div>
+						<div class="card" style="width: 18rem; background: transparent; border: none;">
+							<img class="rounded-4" class="card h-100" style="background-color: transparent;text-align: center; box-shadow: 4px 5px 8px rgb(255, 0, 0), -6px -4px 4px rgb(0, 255, 0);" src="Photos/Library.jpg" class="card-img-top" alt="..." height="100%" width="100%">
+							<div class="card-body text-center">
+								<h5 class="card-title fw-bold">Library Facility</h5>
+								<a href="Library.html" class="btn btn-primary">Click Here</a>
+							</div>
+						</div>
+						<div class="card" style="width: 18rem; background: transparent; border: none;">
+							<img class="rounded-4" class="card h-100" style="background-color: transparent;text-align: center; box-shadow: 4px 5px 8px rgb(255, 0, 0), -6px -4px 4px rgb(0, 255, 0);" src="Photos/comp lab.jpeg" class="card-img-top" alt="..." height="100%" width="100%">
+							<div class="card-body text-center">
+								<h5 class="card-title fw-bold">Computer Labs</h5>
+								<a href="Computer.html" class="btn btn-primary">Click Here</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<hr style="background-color: rgb(64, 0, 64); height: 20px; border-radius: 3px; margin-left: 2px;">
+
+	<br>
+	<footer class="text-center text-lg-start mt-2">
+  <!-- Grid container -->
+  <div class="container_fluid">
+	  
+    <!--Grid row-->
+	 <div class="row row-cols-1 row-cols-md-5 g-4 px-2">
+			
+	  <div class="col mx-auto">
+		  <center><img src="Photos/Wajeebnew.jpg" class="rounded-circle border border-light border-5" style="background-color: transparent;text-align: center; box-shadow: 4px 5px 8px rgb(255, 0, 0), -4px -5px 8px rgb(0, 255, 0);" width="140" height="140"/><rect width="100%" fill="var(--bs-secondary-color)"/>
+		  <h6 class="fw-bold">Md Wajeeb</h6>
+		  <p>Web Developer</p></center>
+	  </div>
+	  
+	  <div class="col mx-auto">
+		  <center><img src="Photos/Warish.jpg" class="rounded-circle border border-success border-5" width="140" height="140"/><rect width="100%" fill="var(--bs-secondary-color)"/>
+		  <h6 class="fw-bold">Md Abdul Warish</h6>
+		  <p>Assistant Website Designer</p></center>
+	  </div>
+	  
+	  <div class="col mx-auto">
+		  <center><img src="Photos/majun.jpg" class="rounded-circle border border-success border-5" width="140" height="140"/><rect width="100%" fill="var(--bs-secondary-color)"/>
+		  <h6 class="fw-bold">Mayamuddin</h6>
+		  <p>Supervisor (GES)</p></center>
+	  </div>
+	  
+	   <div class="col mx-auto">
+		  <center><img src="Photos/latif.jpg" class="rounded-circle border border-success border-5" width="140" height="140"/><rect width="100%" fill="var(--bs-secondary-color)"/>
+		  <h6 class="fw-bold">Mohammad Latifur Rahaman</h6>
+		  <p>Head Master of (GES)</p></center>
+	  </div>
+	  
+	    <div class="col mx-auto">
+		  <center><img src="Photos/Mufijuddin.jpg" class="rounded-circle border border-success border-5" width="140" height="140"/><rect width="100%" fill="var(--bs-secondary-color)"/>
+		  <h6 class="fw-bold">Alhaj Md Mufijuddin</h6>
+		  <p>Of Sora Mamang Leikai Member Managing Commitee (GES)</p></center>
+	  </div>
+	  
+	    <div class="col mx-auto">
+		  <center><img src="Photos/Rami.jpg" class="rounded-circle border border-success border-5" width="140" height="140"/><rect width="100%" fill="var(--bs-secondary-color)"/>
+		  <h6 class="fw-bold">Muhammad Rami</h6>
+		  <p>Joint Secretary Managing Commitee (GES)</p></center>
+	  </div>
+	  
+	    <div class="col mx-auto">
+		  <center><img src="Photos/Latiff.jpg" class="rounded-circle border border-success border-5" width="140" height="140"/><rect width="100%" fill="var(--bs-secondary-color)"/>
+		  <h6 class="fw-bold">Alhaj Md Abdul Latip</h6>
+		  <p>President, Managing Commitee (GES)</p></center>
+	  </div>
+	  
+	    <div class="col mx-auto">
+		  <center><img src="Photos/Hafijuddin.jpg" class="rounded-circle border border-success border-5" width="140" height="140"/><rect width="100%" fill="var(--bs-secondary-color)"/>
+		  <h6 class="fw-bold">Md Hafijuddin</h6>
+		  <p>Member Managing Commitee (GES)</p></center>
+	  </div>
+	  
+	    <div class="col mx-auto">
+		  <center><img src="Photos/.jpg" class="rounded-circle border border-success border-5" width="140" height="140"/><rect width="100%" fill="var(--bs-secondary-color)"/>
+		  <h6 class="fw-bold">Unknown</h6>
+		  <p>Member Of (GES)</p></center>
+	  </div>
+	  
+	    <div class="col mx-auto">
+		  <center><img src="Photos/.jpg" class="rounded-circle border border-success border-5" width="140" height="140"/><rect width="100%" fill="var(--bs-secondary-color)"/>
+		  <h6 class="fw-bold">Unknown</h6>
+		  <p>Member Of (GES)</p></center>
+	  </div>
+	</div>
+  <!--Grid row-->
+  
+  <!-- Grid container -->
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 8"></button>
+    </div>
+    
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+		<img alt="" src="Photos/footer2.jpg" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+	  </div>
+      
+      <div class="carousel-item">
+		<img alt="" src="Photos/footer3.jpg" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+        <div class="container">
+          <div class="carousel-caption text-end">
+          </div> 
+        </div>
+      </div>
+      
+       <div class="carousel-item">
+		<img alt="" src="Photos/footer4.jpg" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+        <div class="container">
+          <div class="carousel-caption text-end">
+          </div>
+        </div>
+      </div>
+      
+       <div class="carousel-item">
+		<img alt="" src="Photos/footer5.jpg" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+        <div class="container">
+          <div class="carousel-caption text-end"> 
+          </div>
+        </div>
+      </div>
+      
+       <div class="carousel-item">
+		<img alt="" src="Photos/footer6.png" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+        <div class="container">
+          <div class="carousel-caption text-end">
+          </div>
+        </div>
+      </div>
+      
+       <div class="carousel-item">
+		<img alt="" src="Photos/footer7.jpg" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+        <div class="container">
+          <div class="carousel-caption text-end">
+          </div>
+        </div>
+      </div>
+      
+       <div class="carousel-item">
+		<img alt="" src="Photos/footer8.jpg" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+        <div class="container">
+          <div class="carousel-caption text-end">
+          </div>
+        </div>
+      </div>
+      
+       <div class="carousel-item">
+		<img alt="" src="Photos/footer9.jpg" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+        <div class="container">
+          <div class="carousel-caption text-end">
+          </div>
+        </div>
+      </div>
+      
+       <div class="carousel-item">
+		<img alt="" src="Photos/footer10.jpg" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+        <div class="container">
+          <div class="carousel-caption text-end">
+          </div>
+     </div>
+     </div>
+     
+     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+  <div class="row">
+	<div class="container my-5 mx-auto">
+	  <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+	    <section class="d-flex justify-content-between p-3" style="background-color: #6351ce">
+	
+	      <div class="me-5">
+	        <span>Get connected with us on social networks:</span>
+	      </div>
+	      
+	      <div>
+	        <a href="https://www.facebook.com" class="text-white me-4">
+	          <i class="bi bi-facebook"></i>
+	        </a>
+	       
+	        <a href="https://www.google.com" class="text-white me-4">
+	          <i class="bi bi-google"></i>
+	        </a>
+	        <a href="https://wa.me/7005319500" class="text-white me-4">
+	          <i class="bi bi-whatsapp"></i>
+	        </a>
+	        
+	      </div>
+	    </section>
+	    <section class="">
+	      <div class="container_fluid text-center text-md-start mt-1">
+	        <!-- Grid row -->
+	        <div class="row mt-2">
+	         
+	            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189.96148048159895!2d94.02469219212803!3d24.51164982644755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37493f06b7ffe2b1%3A0x67dda15b3fefe3c8!2sGeneral%20Junior%20English%20School!5e1!3m2!1sen!2sin!4v1699258674665!5m2!1sen!2sin" 
+	            width="700px" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	          </div>
+
+	          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
+	           
+	          </div>
+	        </div>
+	    </section>
+	
+	<div class="text-center pb-1" style="background-color: rgba(0, 0, 0, 0.2)">
+	     <h6 class="text-uppercase fw-bold pt-2">Contact</h6>
+	     <ul class="list-unstyled d-flex justify-content-between w-75 mx-auto text-center">
+	     	<li><a href=""><i class="bi bi-envelope mr-3"></i> mdwajeebsora2017@gmail.com</a></li>
+	       <li> <i class="bi bi-house mr-3"></i> Sora, Kakching District, Manipur 795103, INDIA</li>
+	     	<li><a href="+91-7005319500"><i class="bi bi-phone mr-3"></i> + 91 7005319500 /  + 91 9615531715</a></li>
+	     </ul>
+	    </div>
+	
+	  </footer>
+	  
+</div>
+	    <div class="text-center px-3 pt-3 d-flex justify-content-between" style="background: rgba(0, 0, 0, 0.5)">
+	     <p class="text-white" >Powered by: <img src="Photos/eShine-noborder.png" width="40px" height="30px"> Technology</p>
+	     <div class="text-white"> &copy; 2023 Copyright: <a class="text-white" style="text-decoration:none" href="https://gessora.com/">www.gessora.com</a></div>
+	      <div class="text-white">Privacy | Terms &amp; Conditions</div>
+	    </div>	
+</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Schedule</title>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+  rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+ <style>
+  .nav-link 
+  
+  {
+  	color:white;
+  }
+  
+  .dropdown:hover>.dropdown-menu{
+  	display: block;
+  }
+  
+  .dropdown-item:hover>.dropdown-menu.dropdown-submenu{
+  	display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active{
+  	/*Without this, clicking will make it sticky*/
+  	pointer-events: none;
+  }
+  
+  .dropdown-item>.dropdown-toggle:active{
+  	position-events: none
+  }
+  
+  .dropdown-menu li{
+  	position:relative;
+  }
+  
+  .dropdown-menu .dropdown-submenu{
+  	display: none;
+  	position: absolute;
+  	left:100%;
+  	top:-7px;
+  }
+  
+  .dropdown-menu .dropdown-submenu-left{
+  	right:100%;
+  	left:auto;
+  }
+  
+  .dropdown-menu> li:hover>.dropdown-submenu{
+  	display:block;
+  }
+  	
+  .navbar-brand
+  {
+  	color:white;
+  	  }
+  	  
+  body{
+  	background:url(Photos/img34.jpg);
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment:fixed
+  	  }
+  
+  a{
+  	text-decoration: none;
+  }
+  
+  .navbar ul li{
+  color: white;
+  padding-right:15px;
+  padding-left:15px;
+  }
+  .navbar ul li #L{
+	  color: white;
+  }
+  
+  </style>
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg bg-success shadow py-3">
+	  <div class="container-fluid justify-content-center">
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav list-unstyled d-flex">
+	      <li class="fw-bold"><a id="L" href="index.html"> Home </a></li>
+	      </ul>
+	      </div>
+	    </div>
+	</nav><br>
+	
+	<div class="row w-100">
+  <div class="col-3">
+    <!-- Tab navs -->
+    <div
+      class="nav flex-column nav-tabs text-center"
+      id="v-tabs-tab"
+      role="tablist"
+      aria-orientation="vertical">
+   
+      <a
+        class="nav-link active"
+        id="v-tabs-routine-tab"
+        data-mdb-toggle="tab"
+        href="#v-tabs-routine"
+        role="tab"
+        aria-controls="v-tabs-routine"
+        aria-selected="true"
+        >Daily Routine</a>
+
+      <a
+        class="nav-link"
+        id="v-tabs-exam-tab"
+        data-mdb-toggle="tab"
+        href="#v-tabs-exam"
+        role="tab"
+        aria-controls="v-tabs-exam"
+        aria-selected="false"
+        >Exam Schedule</a>
+        
+        <div class="card h-90 m-2" style="background-color: transparent;text-align: center; box-shadow: 5px 6px 8px rgb(255, 0, 128), -6px -4px 4px rgb(0, 0, 255);">
+								<div class="card-body">
+									<h5 class="bg-primary text-light rounded-3 mb-3">Notice Board</h5>
+									
+									<marquee direction="up" style="height: 95%;" onmouseover="this.stop();" onmouseout="this.start();" >
+									<p class="text-center fw-bold">Notice <br> Date: 04/12/2023</p>
+
+										<p class="text-align">
+											All the students and teaching and non-teaching staff are notified that
+										our school will be closed for the winter vacation from December 5th to
+										December 25th. All the classes will be suspended during this period.
+										As usual, the school will reopen on December 26th. We remind all the
+										students about the homework and assignments instructed before and afterthe holiday.
+										The examination will happen as scheduled before the winter vacation. We wish all the students to enjoy this holiday safely.</p>
+										<p class="text-center fw-bold">Wish you a happy winter Vacation</p>
+										
+									</marquee>
+								</div>
+							</div>
+        
+    </div>
+    <!-- Tab navs -->
+  </div>
+
+  <div class="col-9">
+    <!-- Tab content -->
+    <div class="tab-content" id="v-tabs-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="v-tabs-routine"
+        role="tabpanel"
+        aria-labelledby="v-tabs-routine-tab">
+      
+        <div class="row w-100 mx-auto">
+		        <div class="col ">
+					<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button id="btn1" class="accordion-button" type="button"
+								data-mdb-toggle="collapse" data-mdb-target="#collapseOne"
+								aria-expanded="true" aria-controls="collapseOne">
+								L. KG</button></h2>
+						
+						<div id="collapseOne" class="accordion-collapse collapse"
+							aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									 <td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+							<button id="btn2" class="accordion-button collapsed"
+								type="button" data-mdb-toggle="collapse"
+								data-mdb-target="#collapseTwo" aria-expanded="false"
+								aria-controls="collapseTwo">U. KG</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse"
+							aria-labelledby="headingTwo" data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									 <td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+							<button id="btn3" class="accordion-button collapsed"
+								type="button" data-mdb-toggle="collapse"
+								data-mdb-target="#collapseThree" aria-expanded="false"
+								aria-controls="collapseThree">Class - I</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse"
+							aria-labelledby="headingThree"
+							data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									<td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFour">
+							<button id="btn4" class="accordion-button collapsed"
+								type="button" data-mdb-toggle="collapse"
+								data-mdb-target="#collapseFour" aria-expanded="false"
+								aria-controls="collapseFour">Class - II</button>
+						</h2>
+						<div id="collapseFour" class="accordion-collapse collapse"
+							aria-labelledby="headingFour"
+							data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									 <td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFive">
+							<button id="btn5" class="accordion-button collapsed"
+								type="button" data-mdb-toggle="collapse"
+								data-mdb-target="#collapseFive" aria-expanded="false"
+								aria-controls="collapseFive">Class - III</button>
+						</h2>
+						<div id="collapseFive" class="accordion-collapse collapse"
+							aria-labelledby="headingFive"
+							data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									 <td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingSix">
+							<button id="btn6" class="accordion-button collapsed"
+								type="button" data-mdb-toggle="collapse"
+								data-mdb-target="#collapseSix" aria-expanded="false"
+								aria-controls="collapseSix">Class - IV</button>
+						</h2>
+						<div id="collapseSix" class="accordion-collapse collapse"
+							aria-labelledby="headingSix"
+							data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									<td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingSeven">
+							<button id="btn7" class="accordion-button collapsed"
+								type="button" data-mdb-toggle="collapse"
+								data-mdb-target="#collapseSeven" aria-expanded="false"
+								aria-controls="collapseSeven">Class - V</button>
+						</h2>
+						<div id="collapseSeven" class="accordion-collapse collapse"
+							aria-labelledby="headingSeven"
+							data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									 <td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingEight">
+							<button id="btn8" class="accordion-button collapsed"
+								type="button" data-mdb-toggle="collapse"
+								data-mdb-target="#collapseEight" aria-expanded="false"
+								aria-controls="collapseEight">Class - VI</button>
+						</h2>
+						<div id="collapseEight" class="accordion-collapse collapse"
+							aria-labelledby="headingEight"
+							data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									<td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingNine">
+							<button id="btn9" class="accordion-button collapsed"
+								type="button" data-mdb-toggle="collapse"
+								data-mdb-target="#collapseNine" aria-expanded="false"
+								aria-controls="collapseNine">Class - VII</button>
+						</h2>
+						<div id="collapseNine" class="accordion-collapse collapse"
+							aria-labelledby="headingNine"
+							data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									<td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTen">
+							<button id="btn10" class="accordion-button collapsed"
+								type="button" data-mdb-toggle="collapse"
+								data-mdb-target="#collapseTen" aria-expanded="false"
+								aria-controls="collapseTen">Class - VIII</button>
+						</h2>
+						<div id="collapseTen" class="accordion-collapse collapse"
+							aria-labelledby="headingTen"
+							data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									<td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingEleven">
+							<button id="btn11" class="accordion-button collapsed"
+								type="button" data-mdb-toggle="collapse"
+								data-mdb-target="#collapseEleven" aria-expanded="false"
+								aria-controls="collapseEleven">Class - IX</button>
+						</h2>
+						<div id="collapseEleven" class="accordion-collapse collapse"
+							aria-labelledby="headingEleven"
+							data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									 <td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwelve">
+							<button id="btn12" class="accordion-button collapsed"
+								type="button" data-mdb-toggle="collapse"
+								data-mdb-target="#collapseTwelve" aria-expanded="false"
+								aria-controls="collapseTwelve">Class - X</button>
+						</h2>
+						<div id="collapseTwelve" class="accordion-collapse collapse"
+							aria-labelledby="headingTwelve"
+							data-mdb-parent="#accordionExample">
+							<div class="accordion-body">
+								<table class="table text-center">
+									<tr>
+									 <td colspan="7" class="fs-3 fw-bold text-center">
+											Daily Class Routine
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-success text-light">Days</th>
+										<th class="bg-success text-light">First</th>
+										<th class="bg-success text-light">Second</th>
+										<th class="bg-success text-light">Third</th>
+										<th class="bg-success text-light">Fourth</th>
+										<th class="bg-success text-light">Fifth</th>
+										<th class="bg-success text-light">Sixth</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Monday</thclass="bg-success text-light">
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Tuesday</th>
+										<th>English</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+										<th>Science</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Wednesday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>Meitei-Mayek</th>
+										<th>English</th>
+										<th>Social Science</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Thursday</th>
+										<th>English</th>
+										<th>Maths</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Hindi</th>
+										<th>Social Science</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Friday</th>
+										<th>English</th>
+										<th>Social Sceince</th>
+										<th>Meitei-Mayek</th>
+										<th>Science</th>
+										<th>Maths</th>
+										<th>Hindi</th>
+									</tr>
+									<tr>
+										<th class="bg-info text-light">Saturday</th>
+										<th>Maths</th>
+										<th>Science</th>
+										<th>English</th>
+										<th>Hindi</th>
+										<th>Meitei-Mayek</th>
+										<th>Social Science</th>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>	
+				</div>
+        
+      </div>
+      <div
+        class="tab-pane fade"
+        id="v-tabs-exam"
+        role="tabpanel"
+        aria-labelledby="v-tabs-exam-tab">
+        
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+				  <div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingOne">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseOne"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseOne">
+				        
+				        L. KG </button></h2>
+				    
+				    <div
+				      id="flush-collapseOne"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingOne"
+				      data-mdb-parent="#accordionFlushExample">
+				      
+				      <div class="accordion-body">
+				        <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+								</table>
+				      </div>
+				    </div>
+				  </div>
+				  
+				  <div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingTwo">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseTwo"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseTwo">
+				        
+				        U. KG
+				      </button>
+				    </h2>
+				    
+				    <div
+				      id="flush-collapseTwo"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingTwo"
+				      data-mdb-parent="#accordionFlushExample">
+				      
+				      <div class="accordion-body">
+				        <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+									
+								</table>
+				      </div>
+				    </div>
+				  </div>
+				  
+				  <div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingThree">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseThree"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseThree">
+				        
+				        Class - I
+				      </button>
+				    </h2>
+				    
+				    <div
+				      id="flush-collapseThree"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingThree"
+				      data-mdb-parent="#accordionFlushExample">
+				    
+				      <div class="accordion-body">
+				        <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+									
+								</table>
+				      </div>
+				  </div>
+				</div>
+				
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingFour">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseFour"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseFour">
+				        
+				        Class - II
+				      </button>
+				    </h2>
+				    
+				    <div
+				      id="flush-collapseFour"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingFour"
+				      data-mdb-parent="#accordionFlushExample">
+				    
+				      <div class="accordion-body">
+				        <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+									
+								</table>
+				      </div>
+				  </div>
+				</div>
+				
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingFive">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseFive"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseFive">
+				        
+				        Class - III
+				      </button>
+				    </h2>
+				    
+				    <div
+				      id="flush-collapseFive"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingFive"
+				      data-mdb-parent="#accordionFlushExample">
+				    
+				      <div class="accordion-body">
+				        <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+									
+								</table>
+				      </div>
+				  </div>
+				</div>
+				
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingSix">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseSix"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseSix">
+				        
+				        Class - IV
+				      </button>
+				    </h2>
+				    
+				    <div
+				      id="flush-collapseSix"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingSix"
+				      data-mdb-parent="#accordionFlushExample">
+				      
+				      <div class="accordion-body">
+				        <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+									
+								</table>
+				      </div>
+				  </div>
+				</div>
+				
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingSeven">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseSeven"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseSeven">
+				        
+				        Class - V
+				      </button>
+				    </h2>
+				    
+				    <div
+				      id="flush-collapseSeven"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingSeven"
+				      data-mdb-parent="#accordionFlushExample">
+				      
+				      <div class="accordion-body">
+				        <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+									
+								</table>
+				      </div>
+				  </div>
+				</div>
+				
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingEight">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseEight"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseEight">
+				        
+				        Class - VI
+				      </button>
+				    </h2>
+				    
+				    <div
+				      id="flush-collapseEight"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingEight"
+				      data-mdb-parent="#accordionFlushExample">
+				      
+				      <div class="accordion-body">
+				        <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+									
+								</table>
+				      </div>
+				  </div>
+				</div>
+				
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingNine">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseNine"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseNine">
+				        
+				        Class - VII
+				      </button>
+				    </h2>
+				    
+				    <div
+				      id="flush-collapseNine"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingNine"
+				      data-mdb-parent="#accordionFlushExample">
+				      
+				      <div class="accordion-body">
+				        <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+									
+								</table>
+				      </div>
+				  </div>
+				</div>
+				
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingTen">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseTen"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseTen">
+				        
+				        Class - VIII
+				      </button>
+				    </h2>
+				    
+				    <div
+				      id="flush-collapseTen"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingTen"
+				      data-mdb-parent="#accordionFlushExample">
+				      
+				      <div class="accordion-body">
+				       <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+									
+								</table>
+				      </div>
+				  </div>
+				</div>
+				
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingEleven">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseEleven"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseEleven">
+				        
+				        Class - IX
+				      </button>
+				    </h2>
+				    
+				    <div
+				      id="flush-collapseEleven"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingEleven"
+				      data-mdb-parent="#accordionFlushExample">
+				      
+				      <div class="accordion-body">
+				        <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+									
+								</table>
+				      </div>
+				  </div>
+				</div>
+				
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="flush-headingTwelve">
+				      <button
+				        class="accordion-button collapsed"
+				        type="button"
+				        data-mdb-toggle="collapse"
+				        data-mdb-target="#flush-collapseTwelve"
+				        aria-expanded="false"
+				        aria-controls="flush-collapseTwelve">
+				        
+				        Class - X
+				      </button>
+				    </h2>
+				    
+				    <div
+				      id="flush-collapseTwelve"
+				      class="accordion-collapse collapse"
+				      aria-labelledby="flush-headingTwelve"
+				      data-mdb-parent="#accordionFlushExample">
+				      
+				      <div class="accordion-body">
+				        <table class="table text-center">
+									<tr>
+										<td colspan="3" class="fs-3 fw-bold">
+											Time:- 10:30AM TO 12:30
+										</td>
+									</tr>
+									<tr >
+										<th class="bg-success text-light">Date</th>
+										<th class="bg-success text-light">Day</th>
+										<th class="bg-success text-light">Subject</th>
+									</tr>
+									<tr>
+										<th>01-12-2023</th>
+										<th>Monday</th>
+										<th>Maths</th>
+									</tr>
+									<tr>
+										<th>02-12-2023</th>
+										<th>Tuesday</th>
+										<th>English</th>
+									</tr>
+									<tr>
+										<th>03-12-2023</th>
+										<th>Wednesday</th>
+										<th>Science</th>
+									</tr>
+									<tr>
+										<th>04-12-2023</th>
+										<th>Thursday</th>
+										<th>Manipur</th>
+									</tr>
+									
+								</table>
+						      </div>
+						  </div>
+						</div>
+				
+      </div>
+    </div>
+    <!-- Tab content -->
+  </div>
+</div>
+</div><br>
+  
+		<div class="text-center px-3 pt-3 d-flex justify-content-between" style="background: rgba(0, 0, 0, 0.5)">
+	     <p class="text-white" >Powered by: <img src="Photos/eShine-noborder.png" width="40px" height="30px"> Technology</p>
+	     <div class="text-white"> &copy; 2023 Copyright: <a class="text-white" style="text-decoration:none" href="https://gessora.com/">www.gessora.com</a></div>
+	      <div class="text-white">Privacy | Terms &amp; Conditions</div>
+	    </div>			    
+
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teacher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+  .nav-link 
+  
+  {
+  	color:white;
+  }
+  
+  .dropdown:hover>.dropdown-menu{
+  	display: block;
+  }
+  
+  .dropdown-item:hover>.dropdown-menu.dropdown-submenu{
+  	display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active{
+  	/*Without this, clicking will make it sticky*/
+  	pointer-events: none;
+  }
+  
+  .dropdown-item>.dropdown-toggle:active{
+  	position-events: none
+  }
+  
+  .dropdown-menu li{
+  	position:relative;
+  }
+  
+  .dropdown-menu .dropdown-submenu{
+  	display: none;
+  	position: absolute;
+  	left:100%;
+  	top:-7px;
+  }
+  
+  .dropdown-menu .dropdown-submenu-left{
+  	right:100%;
+  	left:auto;
+  }
+  
+  .dropdown-menu> li:hover>.dropdown-submenu{
+  	display:block;
+  }
+  	
+  .navbar-brand
+  {
+  	color:white;
+  	  }
+  	  
+  body{
+  	background:url(Photos/kkkkk.jpg);
+  	background-size: cover;
+  	background-position: center;
+  	background-attahchment:fixed
+  	  }
+  
+  a{
+  	text-decoration: none;
+  }
+  
+  .navbar ul li{
+  color: white;
+  padding-right:15px;
+  padding-left:15px;
+  }
+  
+  </style>
+  </head>
+  <body>
+  
+	<nav class="sticky-top navbar navbar-expand-lg bg-success">
+  <div class="container-fluid">
+  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="color:white;"class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+      </ul>
+      
+     <!-- <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success text-light" type="submit">Search</button>
+      </form>-->
+    </div>
+  </div>
+</nav><br>
+	
+	<div class="container_fluid mb-3">
+	<div class="row pt-5 mt-2 mx-auto w-50" style="min-height: 490px;">
+		<div class="col mb-3 mb-sm-0 text-center float-right">
+			<div class="card border-2 border-success" style="background-color: rgba(255, 255, 255, 0.1);text-align: center; box-shadow: 8px 8px 6px rgb(0, 255, 255), -8px -8px 6px rgb(255, 0, 0);">
+				<div class="card-body mb-0">
+					<!-- <i class="bi bi-person" style="font-size:6em"></i> -->
+					<center><img src="Photos/logo.png"class="d-block w-40" alt="..."></center>
+					<h5 class="card-title mt-0 fw-bold">Teacher's Login</h5>
+					  <div class="row ">
+						  <div class="col mx-auto">
+			 		   <a href="TeacherLogin.jsp"><button type="submit" class="btn btn-primary  w-25">Login<i class="bi bi-chevron-double-right ps-2"></i></button></a>
+					 
+					   <a href="TeacherSignUp.jsp"> <button type="submit" class="btn btn-primary  w-25">SignUp<i class="bi bi-chevron-double-right ps-2"></i></button></a>
+					  </div>
+					  </div>
+				</div>
+				
+				<div class="row">
+						
+						<div class="col-4">
+							<a style="color: black; text-decoration: none;"
+								href="guidelines.jsp"> <img
+								src="https://th.bing.com/th/id/R.94040b2f6e0c10f6c7ad1bda56b69a0e?rik=haRnqb3sn8AXQw&riu=http%3a%2f%2fsweetclipart.com%2fmultisite%2fsweetclipart%2ffiles%2fquestion_button.png&ehk=MAX8cKchG6pokz4F5oNgRwnDQ4%2fFt8AgOS2Vq7NW1wU%3d&risl=&pid=ImgRaw&r=0"
+								class="img-fluid rounded-circle me-3" width="50px" height="30px">
+								 <br>How do i do?
+							</a>
+
+
+						</div>
+						<div class="col-4">
+							<a style="color: black; text-decoration: none;"
+								href="tel:7005319500"> <img
+								src="https://th.bing.com/th/id/OIP.ofOu_ZenbWynFmh5iGuHLAHaGA?pid=ImgDet&rs=1"
+								class="img-fluid rounded-circle me-3" width="60px" height="30px">
+								<br> Customer Care
+							</a>
+
+						</div>
+						<div class="col-4">
+							<a style="color: black; text-decoration: none;"
+								href="lockuser.jsp"> <img
+								src="https://th.bing.com/th/id/OIP.KvxsjTAaqb00FXiE-evumgHaHa?pid=ImgDet&rs=1"
+								class="img-fluid rounded-circle me-3" width="50px" height="30px">
+								<br> Lock & UnLock
+							</a>
+
+						</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	   <div class="text-center px-3 pt-3 d-flex justify-content-between" style="background: rgba(0, 0, 0, 0.5)">
+	     <p class="text-white" >Powered by: <img src="Photos/eShine-noborder.png" width="40px" height="30px"> Technology</p>
+	     <div class="text-white"> &copy; 2023 Copyright: <a class="text-white" style="text-decoration:none" href="https://gessora.com/">www.gessora.com</a></div>
+	      <div class="text-white">Privacy | Terms &amp; Conditions</div>
+	    </div>	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
